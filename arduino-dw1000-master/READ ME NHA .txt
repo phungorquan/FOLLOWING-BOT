@@ -1,0 +1,4 @@
+- IRQ pin 2->3
+
+- Anchor's code , don't use filter and don't print anything when get data
+- Tag's code , use filter and print infomation 
