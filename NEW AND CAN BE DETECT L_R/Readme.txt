@@ -1,0 +1,1 @@
+Boardcui nen chay sau khi boardxin chay , va trong code thi boardcui + 30cm so voi boardxin
