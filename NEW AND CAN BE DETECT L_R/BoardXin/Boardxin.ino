@@ -16,7 +16,7 @@ const uint8_t PIN_SS = SS; // spi select pin
 int count = 0;
 void setup() {
   Serial.begin(115200);
-  delay(1000);
+  delay(800);
   //DW1000.begin(PIN_IRQ, PIN_RST);
   // DW1000.select(PIN_SS);
 
@@ -57,9 +57,11 @@ void loop() {
 //
 //}
 void newRange() {
-  //Serial.print("from: "); Serial.print(DW1000Ranging.getDistantDevice()->getShortAddress(), HEX);
-  //Serial.print("Range: ");
-  //Serial.print(DW1000Ranging.getDistantDevice()->getRange());
+//  Serial.print("from: "); Serial.print(DW1000Ranging.getDistantDevice()->getShortAddress(), HEX);
+//  Serial.print("Range: ");
+//  Serial.println(DW1000Ranging.getDistantDevice()->getRange());
+
+
   float tmp = DW1000Ranging.getDistantDevice()->getRange();
   //int tmp1;
  while(tmp <= 0)
@@ -84,8 +86,8 @@ void newRange() {
    //Serial.print(
    count = 0 ;
   }
-  //Serial
 
+ 
   //Serial.println(" m");
   // Serial.print("\t RX power: "); Serial.print(DW1000Ranging.getDistantDevice()->getRXPower()); Serial.println(" dBm");
 }
